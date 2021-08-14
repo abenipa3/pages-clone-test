@@ -1,0 +1,8 @@
+jekyll:
+  image: jekyll/jekyll:pages
+  command: jekyll serve --no-watch --incremental
+  container_name: pages-clone-test
+  ports:
+    - 4000:4000
+  volumes:
+    - .:/srv/jekyll
